@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------- Landing Page--------------------------- */
+.ladning-page {
+    height: 100vh;
+    background: url(./image/bg-landingpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.landing-info {
+    color: #fff;
+}
+
+.landing-info * {
+    margin: 1rem;
+}
+
+.landing-info h1 {
+    font-size: 6vw;
+    /* -webkit-text-stroke: 3px #fff; */
+    letter-spacing: 2px;
+    font-weight: bolder;
+    animation-name: fadeLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.landing-info button {
+    padding: 0.7rem 2rem;
+    background: #5DD3BE;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.5s linear;
+    animation-name: fadeBottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    outline: none;
+}
+
+.landing-info button:hover {
+    background: #333;
+}
+
+.landing-info .fa-globe {
+    font-size: 5rem;
+}
+
+
+
+
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-50rem)
+    }
+}
+
+@keyframes fadeBottom {
+    0% {
+        transform: translateY(10rem);
+    }
+}
+
+/* -------------------- Landing Page--------------------------- */
